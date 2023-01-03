@@ -25,24 +25,24 @@ struct icon_pair {
 #define ICON_PADDING_LEFT  ""
 #define ICON_PADDING_RIGHT " "
 
-#define COLOR_VIDEO        93  /* Purple */
-#define COLOR_AUDIO        220 /* Gold1 */
-#define COLOR_IMAGE        82  /* Chartreuse2 */
-#define COLOR_DOCS         202 /* OrangeRed1 */
-#define COLOR_ARCHIVE      209 /* Salmon1 */
+#define COLOR_VIDEO        125 /* Purple */
+#define COLOR_AUDIO        136 /* Gold1 */
+#define COLOR_IMAGE        37  /* Chartreuse2 */
+#define COLOR_DOCS         166 /* OrangeRed1 */
+#define COLOR_ARCHIVE      136 /* Salmon1 */
 #define COLOR_C            81  /* SteelBlue1 */
-#define COLOR_JAVA         32  /* DeepSkyBlue3 */
-#define COLOR_JAVASCRIPT   47  /* SpringGreen2 */
-#define COLOR_REACT        39  /* DeepSkyBlue1 */
-#define COLOR_CSS          199 /* DeepPink1 */
-#define COLOR_PYTHON       227 /* LightGoldenrod1 */
-#define COLOR_LUA          19  /* Blue3 */
-#define COLOR_DOCUMENT     15  /* White */
-#define COLOR_FSHARP       31  /* DeepSkyBlue3 */
+#define COLOR_JAVA         33  /* DeepSkyBlue3 */
+#define COLOR_JAVASCRIPT   64  /* SpringGreen2 */
+#define COLOR_REACT        33  /* DeepSkyBlue1 */
+#define COLOR_CSS          125 /* DeepPink1 */
+#define COLOR_PYTHON       136 /* LightGoldenrod1 */
+#define COLOR_LUA          33  /* Blue3 */
+#define COLOR_DOCUMENT     230  /* White */
+#define COLOR_FSHARP       33  /* DeepSkyBlue3 */
 #define COLOR_RUBY         160 /* Red3 */
-#define COLOR_SCALA        196 /* Red1 */
-#define COLOR_SHELL        47  /* SpringGreen2 */
-#define COLOR_VIM          28  /* Green4 */
+#define COLOR_SCALA        166 /* Red1 */
+#define COLOR_SHELL        64  /* SpringGreen2 */
+#define COLOR_VIM          64  /* Green4 */
 
 /*
  * Using symbols defined in icons-in-terminal.h, or even using icons-in-terminal is not necessary.
@@ -53,7 +53,7 @@ struct icon_pair {
 #if defined(ICONS)
 static const struct icon_pair dir_icon  = {"", FA_FOLDER, 0};
 static const struct icon_pair file_icon = {"", FA_FILE_O, 0};
-static const struct icon_pair exec_icon = {"", FA_COG,    0};
+static const struct icon_pair exec_icon = {"", FA_COG,    64};
 #elif defined(NERD)
 static const struct icon_pair dir_icon  = {"", ICON_DIRECTORY, 0};
 static const struct icon_pair file_icon = {"", ICON_FILE,      0};
@@ -66,13 +66,13 @@ static const struct icon_pair icons_name[] = {
 #if defined(ICONS)
 	{".git",         FA_GIT,        0},
 	{"Desktop",      FA_DESKTOP,    0},
-	{"Documents",    FA_BRIEFCASE,  0},
-	{"Downloads",    FA_DOWNLOAD,   0},
-	{"Music",        FA_MUSIC,      0},
-	{"Pictures",     MD_CAMERA_ALT, 0},
-	{"Public",       FA_INBOX,      0},
+	{"doc",          FA_BRIEFCASE,  0},
+	{"1web",         FA_DOWNLOAD,   0},
+	{"music",        FA_MUSIC,      0},
+	{"pic",          MD_CAMERA_ALT, 0},
+	{"web",          FA_INBOX,      0},
 	{"Templates",    FA_PAPERCLIP,  0},
-	{"Videos",       FA_FILM,       0},
+	{"vids",         FA_VIDEO_CAMERA, 0},
 	{"CHANGELOG",    FA_HISTORY,    COLOR_DOCS},
 	{"configure",    FILE_CONFIG,   0},
 	{"License",      FA_COPYRIGHT,  COLOR_DOCS},
